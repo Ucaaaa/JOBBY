@@ -1,0 +1,2 @@
+-r ../backend/requirements.txt
+python-telegram-bot[job-queue]==21.6

@@ -1,0 +1,11 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+body { @apply bg-cream font-body text-cocoa antialiased; }
+h1, h2, h3 { @apply font-head; }
+:focus-visible { outline: 3px solid #76B9EF; outline-offset: 2px; }
+.sky-bg { background: radial-gradient(60rem 30rem at 10% -10%, #B8DDF8 0%, transparent 60%),
+  radial-gradient(40rem 25rem at 100% 0%, #D8C8F3 0%, transparent 55%), #FFFDF5; }
+.btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2 text-sm font-semibold transition active:scale-95; }
+.btn-primary { @apply btn bg-sky text-cocoa shadow-[0_3px_0_#4f9bd6] hover:brightness-105; }
+.btn-ghost { @apply btn bg-white/70 text-cocoa border border-choc/20 hover:bg-white; }
+.input { @apply w-full rounded-xl border border-choc/25 bg-white px-3 py-2 text-sm; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
